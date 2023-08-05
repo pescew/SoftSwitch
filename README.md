@@ -25,6 +25,8 @@ manually configured ports are provided as comma separated strings:
 - first number defines the pvid/untagged vlan.
 
 - subsequent numbers define tagged vlans.
+  
+- trunk defines a port that carries all tagged vlans with pvid untagged
 
 - xdpMode can be set to either xdpdrv or xdpgeneric
 
