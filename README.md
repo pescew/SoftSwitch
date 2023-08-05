@@ -32,7 +32,7 @@ xdpMode can be set to either xdpdrv or xdpgeneric
 requires kernel version 5.17 or newer.  required packages:
 
 ```
-make clang gcc-multilib libpcap-dev linux-tools-common linux-tools-common linux-tools-generic linux-cloud-tools-generic
+make clang gcc-multilib libpcap-dev linux-tools-common linux-tools-generic linux-cloud-tools-generic
 ```
 
 generate vmlinux.h:
