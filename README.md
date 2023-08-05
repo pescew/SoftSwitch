@@ -20,13 +20,13 @@ softswitch -port enp5s0,trunk -port enp5s0d1,80 -port enp8s0,10,70,80 -port enp8
 
 manually configured ports are provided as comma separated strings:
 
-first element defines the nic interface name.
+- first element defines the nic interface name.
 
-first number defines the pvid/untagged vlan.
+- first number defines the pvid/untagged vlan.
 
-subsequent numbers define tagged vlans.
+- subsequent numbers define tagged vlans.
 
-xdpMode can be set to either xdpdrv or xdpgeneric
+- xdpMode can be set to either xdpdrv or xdpgeneric
 
 ## Building from source
 requires kernel version 5.17 or newer.  required packages:
