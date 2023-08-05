@@ -21,6 +21,9 @@ switch -port enp5s0,trunk -port enp5s0d1,80 -port enp8s0,10,70,80 -port enp8s0d1
 manually configured ports are provided as comma separated strings:
 
 first element defines the nic interface name.
+
 first number defines the pvid/untagged vlan.
+
 subsequent numbers define tagged vlans.
+
 xdpMode can be set to either xdpdrv or xdpgeneric
