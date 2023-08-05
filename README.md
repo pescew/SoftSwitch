@@ -27,3 +27,22 @@ first number defines the pvid/untagged vlan.
 subsequent numbers define tagged vlans.
 
 xdpMode can be set to either xdpdrv or xdpgeneric
+
+## Building from source
+requires kernel version 5.17 or newer.  required packages:
+
+'''
+make clang gcc-multilib libpcap-dev linux-tools-common linux-tools-common linux-tools-generic linux-cloud-tools-generic
+'''
+
+generate vmlinux.h:
+
+'''
+bpftool btf dump file /sys/kernel/btf/vmlinux format c > ./ebpf/include/vmlinux.h
+'''
+
+make:
+'''
+make -B
+'''
+
