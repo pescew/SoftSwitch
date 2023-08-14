@@ -1,5 +1,5 @@
 GOCMD := go
-GOBUILD := $(GOCMD) build
+GOBUILD := $(GOCMD) build -ldflags="-s -w" -trimpath
 GOCLEAN := $(GOCMD) clean
 CLANG := clang
 CLANG_INCLUDE := -I ./ebpf/include
