@@ -9,8 +9,6 @@ XDP program will be executed by the network driver if the driver supports native
 
 unicast frames are handled by XDP program. broadcast frames are handed off to TC program due to XDP redirect limitations.
 
-requires linux kernel version 5.17 or newer (bpf_loop support)
-
 ## Usage
 port configuration is read from yaml or json, or can be manually defined using command line flags:
 
@@ -31,7 +29,7 @@ manually configured ports are provided as comma separated strings:
 - xdpMode can be set to either xdpdrv or xdpgeneric
 
 ## Building from source
-requires kernel version 5.17 or newer.  required packages:
+required packages:
 
 ```
 make clang gcc-multilib libpcap-dev linux-tools-common linux-tools-generic linux-cloud-tools-generic
