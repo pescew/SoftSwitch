@@ -3,7 +3,7 @@ module github.com/pescew/SoftSwitch
 go 1.21.0
 
 require (
-	github.com/cilium/cilium v1.14.0
+	github.com/cilium/cilium v1.14.2
 	github.com/cilium/ebpf v0.11.0
 	github.com/goccy/go-json v0.10.2
 	github.com/hashicorp/golang-lru/v2 v2.0.5
